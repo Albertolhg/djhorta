@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Press Kit · DJ Hörta</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,sans-serif;background:#f2f2f2;color:#1a1a1a;padding:2rem 1rem 4rem}
+.pk{max-width:820px;margin:0 auto}
+
+.pk-hero{position:relative;border-radius:18px;overflow:hidden;min-height:280px;display:flex;align-items:flex-end;margin-bottom:2rem;background:#1a2e1a}
+.pk-hero svg{position:absolute;inset:0;width:100%;height:100%}
+.pk-hero-content{position:relative;z-index:2;padding:2rem;width:100%}
+.pk-tag{display:inline-block;background:rgba(80,180,80,0.2);color:#a8e6a8;border:0.5px solid rgba(100,200,100,0.35);border-radius:20px;font-size:11px;letter-spacing:.12em;padding:4px 12px;text-transform:uppercase;margin-bottom:12px}
+.pk-name{font-size:clamp(40px,10vw,72px);font-weight:700;color:#e8f5e8;line-height:1;letter-spacing:-.02em;margin-bottom:6px}
+.pk-name span{color:#6fcf6f}
+.pk-sub{font-size:13px;color:rgba(200,240,200,.65);letter-spacing:.06em}
+
+.pk-sec{margin-bottom:2rem}
+.pk-lbl{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#888;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.pk-lbl::after{content:"";flex:1;height:.5px;background:rgba(255,255,255,.1)}
+
+.pk-bio-card{background:#fff;border-radius:14px;padding:1.5rem;border-left:3px solid #4caf50}
+.pk-bio-text{font-size:15px;line-height:1.75;color:#444}
+.pk-genres{display:flex;flex-wrap:wrap;gap:8px;margin-top:1rem}
+.pk-pill{background:#f0f0f0;border:0.5px solid #ddd;border-radius:20px;font-size:12px;padding:4px 14px;color:#666}
+
+.pk-photos{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:140px 140px;gap:8px}
+.pk-photo{border-radius:14px;background:#1a3a1a;display:flex;align-items:flex-end;padding:10px;overflow:hidden;position:relative}
+.pk-photo-main{grid-row:span 2}
+.pk-photo-lbl{background:rgba(0,0,0,.5);color:rgba(200,240,200,.8);font-size:10px;padding:3px 8px;border-radius:10px;letter-spacing:.06em;text-transform:uppercase;position:relative;z-index:2}
+.pk-photos-note{font-size:12px;color:#666;margin-top:8px}
+
+.pk-sets{display:flex;flex-direction:column;gap:8px}
+.pk-set{display:flex;align-items:center;gap:12px;background:#fff;border:.5px solid #e0e0e0;border-radius:12px;padding:14px 16px}
+.pk-play{width:36px;height:36px;border-radius:50%;background:#2e7d32;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.pk-play svg{width:14px;height:14px;fill:#c8e6c9;margin-left:2px}
+.pk-wave{display:flex;align-items:center;gap:2px;height:24px}
+.pk-wave span{width:3px;background:#4caf50;border-radius:2px;opacity:.5;display:block}
+.pk-si{flex:1;min-width:0}
+.pk-st{font-size:14px;font-weight:500;color:#1a1a1a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pk-sm{font-size:12px;color:#888;margin-top:2px}
+.pk-plat{font-size:11px;color:#66bb6a;background:rgba(76,175,80,.12);padding:3px 10px;border-radius:10px;border:.5px solid rgba(76,175,80,.25);text-decoration:none;white-space:nowrap}
+
+.pk-contacts{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+.pk-cc{background:#fff;border:.5px solid #e0e0e0;border-radius:12px;padding:14px 16px;display:flex;align-items:center;gap:12px}
+.pk-ci{width:36px;height:36px;border-radius:10px;background:rgba(46,125,50,.15);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.pk-ci svg{width:18px;height:18px}
+.pk-cl{font-size:11px;color:#888;margin-bottom:2px;text-transform:uppercase;letter-spacing:.08em}
+.pk-cv{font-size:13px;font-weight:500;color:#1a1a1a}
+
+.pk-footer{margin-top:2.5rem;padding-top:1.5rem;border-top:.5px solid #ddd;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.pk-fn{font-size:12px;color:#888}
+.pk-fs{font-size:11px;color:#4caf50;letter-spacing:.1em;text-transform:uppercase}
+</style>
+</head>
+<body>
+<div class="pk">
+
+  <!-- HERO -->
+  <div class="pk-hero">
+    <img src="banner.png" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:right center;">
+    <div class="pk-hero-content">
+      <div class="pk-tag">Press Kit · 2025</div>
+      <div class="pk-name">DJ <span>Hörta</span></div>
+      <div class="pk-sub">Open Format &nbsp;·&nbsp; Belo Horizonte · Brasil</div>
+    </div>
+  </div>
+
+  <!-- BIO -->
+  <div class="pk-sec">
+    <div class="pk-lbl">Bio</div>
+    <div class="pk-bio-card">
+      <p class="pk-bio-text">Nascido nas raves universitárias, DJ Hörta começou a tocar funk na faculdade e simplesmente não conseguiu mais largar as CDJs. Desde então percorreu ambientes dos mais variados — de botecos intimistas a pistas de dança cheias — sempre com uma proposta aberta: agitar qualquer público, em qualquer frequência. Sua filosofia é simples: o set serve a quem está na frente.</p>
+      <div class="pk-genres">
+        <span class="pk-pill">Open Format</span>
+        <span class="pk-pill">Eletrônico</span>
+        <span class="pk-pill">House</span>
+        <span class="pk-pill">Brasilidades</span>
+        <span class="pk-pill">Funk</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOTOS -->
+  <div class="pk-sec">
+    <div class="pk-lbl">Fotos & Identidade</div>
+    <div class="pk-photos">
+      <div class="pk-photo pk-photo-main">
+        <!-- Substitua pelo caminho da sua foto: <img src="foto-principal.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"> -->
+        <span class="pk-photo-lbl">Foto principal</span>
+      </div>
+      <div class="pk-photo">
+        <!-- <img src="live-01.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"> -->
+        <span class="pk-photo-lbl">Live 01</span>
+      </div>
+      <div class="pk-photo">
+        <!-- <img src="live-02.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"> -->
+        <span class="pk-photo-lbl">Live 02</span>
+      </div>
+    </div>
+    <p class="pk-photos-note">Fotos em alta resolução disponíveis mediante solicitação.</p>
+  </div>
+
+  <!-- SETS -->
+  <div class="pk-sec">
+    <div class="pk-lbl">Sets & Música</div>
+    <div class="pk-sets">
+      <div class="pk-set">
+        <div class="pk-play"><svg viewBox="0 0 10 12"><polygon points="0,0 10,6 0,12"/></svg></div>
+        <div class="pk-wave">
+          <span style="height:10px"></span><span style="height:18px"></span>
+          <span style="height:14px"></span><span style="height:22px"></span>
+          <span style="height:8px"></span><span style="height:16px"></span>
+        </div>
+        <div class="pk-si">
+          <div class="pk-st">Set Open Format — Verão</div>
+          <div class="pk-sm">Funk · House · Eletrônico · 60 min</div>
+        </div>
+        <!-- Troque o href pelo link real do set -->
+        <a href="#" class="pk-plat">SoundCloud</a>
+      </div>
+      <div class="pk-set">
+        <div class="pk-play"><svg viewBox="0 0 10 12"><polygon points="0,0 10,6 0,12"/></svg></div>
+        <div class="pk-wave">
+          <span style="height:16px"></span><span style="height:10px"></span>
+          <span style="height:20px"></span><span style="height:12px"></span>
+          <span style="height:22px"></span><span style="height:14px"></span>
+        </div>
+        <div class="pk-si">
+          <div class="pk-st">Live na Faculdade</div>
+          <div class="pk-sm">Funk · Baile · 45 min</div>
+        </div>
+        <!-- Troque o href pelo link real do set -->
+        <a href="#" class="pk-plat">Mixcloud</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTATO -->
+  <div class="pk-sec">
+    <div class="pk-lbl">Contato & Booking</div>
+    <div class="pk-contacts">
+      <div class="pk-cc">
+        <div class="pk-ci">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#4caf50" stroke-width="1.5" stroke-linecap="round">
+            <rect x="2" y="4" width="20" height="16" rx="3"/><polyline points="2,4 12,13 22,4"/>
+          </svg>
+        </div>
+        <div><div class="pk-cl">E-mail</div><div class="pk-cv">albertolhg@gmail.com</div></div>
+      </div>
+      <div class="pk-cc">
+        <div class="pk-ci">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#4caf50" stroke-width="1.5" stroke-linecap="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.05 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+        </div>
+        <div><div class="pk-cl">WhatsApp</div><div class="pk-cv">(31) 9 9888-1995</div></div>
+      </div>
+      <div class="pk-cc">
+        <div class="pk-ci">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#4caf50" stroke-width="1.5" stroke-linecap="round">
+            <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#4caf50"/>
+          </svg>
+        </div>
+        <div><div class="pk-cl">Instagram</div><div class="pk-cv">@albhrt</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="pk-footer">
+    <span class="pk-fn">DJ Hörta · Belo Horizonte, MG · Brasil</span>
+    <span class="pk-fs">Booking aberto · 2025</span>
+  </div>
+
+</div>
+</body>
+</html>
