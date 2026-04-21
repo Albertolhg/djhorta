@@ -51,6 +51,12 @@ body{font-family:'Inter',system-ui,sans-serif;background:#f2f2f2;color:#1a1a1a;p
 .pk-cl{font-size:11px;color:#888;margin-bottom:2px;text-transform:uppercase;letter-spacing:.08em}
 .pk-cv{font-size:13px;font-weight:500;color:#1a1a1a}
 
+.pk-videos{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.pk-video-card{background:#fff;border-radius:14px;overflow:hidden;border:.5px solid #e0e0e0}
+.pk-video-card video{width:100%;display:block;max-height:200px;object-fit:cover;background:#000}
+.pk-video-title{font-size:12px;font-weight:500;color:#444;padding:8px 12px}
+@media(max-width:500px){.pk-videos{grid-template-columns:1fr}}
+
 .pk-footer{margin-top:2.5rem;padding-top:1.5rem;border-top:.5px solid #ddd;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
 .pk-fn{font-size:12px;color:#888}
 .pk-fs{font-size:11px;color:#4caf50;letter-spacing:.1em;text-transform:uppercase}
@@ -63,7 +69,7 @@ body{font-family:'Inter',system-ui,sans-serif;background:#f2f2f2;color:#1a1a1a;p
   <div class="pk-hero">
     <img src="banner.png" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:right center;">
     <div class="pk-hero-content">
-      <div class="pk-tag">Press Kit · 2025</div>
+      <div class="pk-tag">Press Kit · 2026</div>
       <div class="pk-name">DJ <span>Hörta</span></div>
       <div class="pk-sub">Open Format &nbsp;·&nbsp; Belo Horizonte · Brasil</div>
     </div>
@@ -73,7 +79,7 @@ body{font-family:'Inter',system-ui,sans-serif;background:#f2f2f2;color:#1a1a1a;p
   <div class="pk-sec">
     <div class="pk-lbl">Bio</div>
     <div class="pk-bio-card">
-      <p class="pk-bio-text">Nascido nas raves universitárias, DJ Hörta começou a tocar funk na faculdade e simplesmente não conseguiu mais largar as CDJs. Desde então percorreu ambientes dos mais variados — de botecos intimistas a pistas de dança cheias — sempre com uma proposta aberta: agitar qualquer público, em qualquer frequência. Sua filosofia é simples: o set serve a quem está na frente.</p>
+      <p class="pk-bio-text">Nascido nas festas universitárias de Beagá, DJ Hörta começou sua carreira de DJ como um hobby, tocando brasilidades e funk na faculdade e nunca mais largou as CDJ's. Desde então vem percorrendo ambientes dos mais variados — de botecos intimistas a pistas de dança — sempre com a mesma proposta: conectar pessoas pelo único idioma que dispensa tradução.</p>
       <div class="pk-genres">
         <span class="pk-pill">Open Format</span>
         <span class="pk-pill">Eletrônico</span>
@@ -87,21 +93,24 @@ body{font-family:'Inter',system-ui,sans-serif;background:#f2f2f2;color:#1a1a1a;p
   <!-- FOTOS -->
   <div class="pk-sec">
     <div class="pk-lbl">Fotos & Identidade</div>
-    <div class="pk-photos">
-      <div class="pk-photo pk-photo-main">
-        <!-- Substitua pelo caminho da sua foto: <img src="foto-principal.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"> -->
-        <span class="pk-photo-lbl">Foto principal</span>
+    <div class="pk-videos">
+      <div class="pk-video-card">
+        <video controls preload="metadata"><source src="v1.mp4" type="video/mp4"></video>
+        <div class="pk-video-title">Pedras Amarelas - Portugal</div>
       </div>
-      <div class="pk-photo">
-        <!-- <img src="live-01.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"> -->
-        <span class="pk-photo-lbl">Live 01</span>
+      <div class="pk-video-card">
+        <video controls preload="metadata"><source src="v2.mp4" type="video/mp4"></video>
+        <div class="pk-video-title">Pedras Amarelas - Portugal</div>
       </div>
-      <div class="pk-photo">
-        <!-- <img src="live-02.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"> -->
-        <span class="pk-photo-lbl">Live 02</span>
+      <div class="pk-video-card">
+        <video controls preload="metadata"><source src="v3.mp4" type="video/mp4"></video>
+        <div class="pk-video-title">Pedras Amarelas - Portugal</div>
+      </div>
+      <div class="pk-video-card">
+        <video controls preload="metadata"><source src="v4.mp4" type="video/mp4"></video>
+        <div class="pk-video-title">Pedras Amarelas - Portugal</div>
       </div>
     </div>
-    <p class="pk-photos-note">Fotos em alta resolução disponíveis mediante solicitação.</p>
   </div>
 
   <!-- SETS -->
