@@ -53,7 +53,9 @@ body{font-family:'Inter',system-ui,sans-serif;background:#f2f2f2;color:#1a1a1a;p
 
 .pk-videos{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
 .pk-video-card{background:#fff;border-radius:14px;overflow:hidden;border:.5px solid #e0e0e0}
-.pk-video-card video{width:100%;display:block;aspect-ratio:16/9;object-fit:contain;background:#000}
+.pk-video-wrap{position:relative;aspect-ratio:16/9;background:#000;overflow:hidden}
+.pk-video-wrap video{width:100%;height:100%;display:block;object-fit:contain}
+.pk-video-cover{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;cursor:pointer;transition:opacity .3s}
 .pk-video-title{font-size:12px;font-weight:500;color:#444;padding:8px 12px}
 @media(max-width:500px){.pk-videos{grid-template-columns:1fr}}
 
@@ -95,19 +97,31 @@ body{font-family:'Inter',system-ui,sans-serif;background:#f2f2f2;color:#1a1a1a;p
     <div class="pk-lbl">Fotos & Identidade</div>
     <div class="pk-videos">
       <div class="pk-video-card">
-        <video controls preload="metadata" poster="c1.png"><source src="v1.mp4" type="video/mp4"></video>
+        <div class="pk-video-wrap">
+          <video controls preload="metadata"><source src="v1.mp4" type="video/mp4"></video>
+          <img src="c1.png" class="pk-video-cover" onclick="this.style.opacity=0;this.style.pointerEvents='none';this.previousElementSibling.play()">
+        </div>
         <div class="pk-video-title">Pedras Amarelas - Portugal</div>
       </div>
       <div class="pk-video-card">
-        <video controls preload="metadata" poster="c2.png"><source src="v2.mp4" type="video/mp4"></video>
+        <div class="pk-video-wrap">
+          <video controls preload="metadata"><source src="v2.mp4" type="video/mp4"></video>
+          <img src="c2.png" class="pk-video-cover" onclick="this.style.opacity=0;this.style.pointerEvents='none';this.previousElementSibling.play()">
+        </div>
         <div class="pk-video-title">Pedras Amarelas - Portugal</div>
       </div>
       <div class="pk-video-card">
-        <video controls preload="metadata" poster="c3.png"><source src="v3.mp4" type="video/mp4"></video>
+        <div class="pk-video-wrap">
+          <video controls preload="metadata"><source src="v3.mp4" type="video/mp4"></video>
+          <img src="c3.png" class="pk-video-cover" onclick="this.style.opacity=0;this.style.pointerEvents='none';this.previousElementSibling.play()">
+        </div>
         <div class="pk-video-title">Pedras Amarelas - Portugal</div>
       </div>
       <div class="pk-video-card">
-        <video controls preload="metadata" poster="c4.png"><source src="v4.mp4" type="video/mp4"></video>
+        <div class="pk-video-wrap">
+          <video controls preload="metadata"><source src="v4.mp4" type="video/mp4"></video>
+          <img src="c4.png" class="pk-video-cover" onclick="this.style.opacity=0;this.style.pointerEvents='none';this.previousElementSibling.play()">
+        </div>
         <div class="pk-video-title">Pedras Amarelas - Portugal</div>
       </div>
     </div>
